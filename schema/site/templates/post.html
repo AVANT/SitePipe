@@ -1,0 +1,39 @@
+{{>templates/head.html}}
+
+<header>
+</header>
+
+<div id="page">
+    <div class="wrapper">
+        <div class="masthead">
+
+            <span class="title">{{title}}</span>
+
+            {{#image}}
+            <img class="post-image" src="/images/{{image}}">
+            {{/image}}
+
+            {{#author}}
+            <span class="author">{{author}}</span>
+            {{/author}}
+
+            <span class="date">{{date}}</span>
+
+            <div class="meta">
+                <span class="meta">
+                    {{#meta}}
+                    <a class="meta" href="{{#metaUrl}}{{.}}{{/metaUrl}}">{{.}}</a>
+                    {{/meta}}
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <article class="post">
+        {{{content}}}
+    </article>
+
+</div>
+
+{{>templates/foot.html}}

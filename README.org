@@ -1,0 +1,4 @@
+
+# Avant.org Haskell static implementation
+
+Based on [SitePipe](https://hackage.haskell.org/package/sitepipe)

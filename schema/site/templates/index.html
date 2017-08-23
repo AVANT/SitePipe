@@ -1,0 +1,24 @@
+{{>templates/head.html}}
+
+<header>
+</header>
+
+<h1>Avant.org</h1>
+
+<div id="page">
+    <section class="table-of-contents">
+
+        <div class="metadata">
+            <span class="meta">
+            {{#meta}}
+                <a class="meta" href="{{url}}">{{meta}}</a>
+            {{/meta}}
+            </span>
+        </div>
+
+        {{>templates/post-list.html}}
+
+    </section>
+</div>
+
+{{>templates/foot.html}}
